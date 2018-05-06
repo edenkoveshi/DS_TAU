@@ -6,8 +6,8 @@
  * distinct integer keys and info
  * 
  * Implemented by:
- * Eden Koveshi, username: edenkoveshi, id: 316221746
- * Amir Hertz, username: amirhertz, id: 301677068
+ * Eden Koveshi
+ * Amir Hertz
  *
  */
 public class WAVLTree {
