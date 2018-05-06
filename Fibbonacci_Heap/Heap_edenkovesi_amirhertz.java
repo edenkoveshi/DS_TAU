@@ -6,8 +6,8 @@ import java.util.Arrays;
  * An implementation of fibonacci heap over non-negative integers.
  * 
  * Implemented by:
- * Eden Koveshi, username: edenkoveshi, id: 316221746
- * Amir Hertz, username: amirhertz, id: 301677068
+ * Eden Koveshi
+ * Amir Hertz
  *
  */
 public class FibonacciHeap
