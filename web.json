@@ -1,9 +1,23 @@
 {
+  "header":{
+    "title":{
+      "type": "image",
+      "url" : "aa"
+    }
+  },
   "background": {
     "type": "html",
     "url": "https://edenkoveshi.github.io/amiad-porat/",
     "action":{
       "trigger": "navigate"
+    }
+  },
+  "footer":{
+    "tabs": {
+      "items" : [{
+        "type" : "image",
+        "url" : ",,"
+      }]
     }
   }
 }
