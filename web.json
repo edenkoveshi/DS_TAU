@@ -1,0 +1,9 @@
+{
+  "background": {
+    "type": "html",
+    "url": "https://edenkoveshi.github.io/amiad-porat/",
+    "action":{
+      "trigger": "navigate"
+    }
+  }
+}
