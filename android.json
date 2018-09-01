@@ -2,17 +2,35 @@
   "$jason": {
     "head": {
       "title": "עמיעד פורת",
+      "actions": {
+        "visit": [
+          {
+            "{{#if /\\/edit/.test($jason.url)}}": {
+              "type": "$href",
+              "options": {
+                "url": "{{$jason.url.replace('/edit', '')}}",
+                "preload": {
+                  "background": "#ffffff"
+                }
+              }
+            }
+          },
+          {
+            "{{#else}}": {
+              "type": "$default"
+            }
+          }
+        ]
+      }
     },
     "body": {
       "background": {
         "type": "html",
         "url": "https://edenkoveshi.github.io/amiad-porat/",
         "action": {
-          "trigger": "navigate"
+          "trigger": "visit"
         }
       }
     }
   }
 }
-
-
