@@ -3,25 +3,24 @@
     "head": {
       "title": "עמיעד פורת",
       "actions": {
-        "visit": [
-          {
-            "{{#if /\\/edit/.test($jason.url)}}": {
-              "type": "$href",
-              "options": {
-                "url": "{{$jason.url.replace('/edit', '')}}",
-                "preload": {
-                  "background": "#ffffff"
-                }
-              }
-            }
-          },
-          {
-            "{{#else}}": {
-              "type": "$default"
-            }
+                    "$load": {
+                        "type": "$notification.register"
+                    },
+                    "$notification.registered": {
+                        "type": "$set",
+          "options": {
+            "token": "{{$jason.device_token}}"
           }
-        ]
-      }
+                    },
+                    "$notification.remote": {
+                        "type": "$util.banner",
+                        "options": {
+                            "title": "Message",
+                            "description": "{{JSON.stringify($jason)}}"
+                        }
+                    }
+                }
+            }
     },
     "body": {
       "background": {
@@ -29,7 +28,10 @@
         "url": "https://edenkoveshi.github.io/amiad-porat/",
         "action": {
           "trigger": "visit"
-        }
+        },
+        {
+        
+      }
       }
     }
   }
