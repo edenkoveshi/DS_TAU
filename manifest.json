@@ -1,0 +1,18 @@
+{
+  "$jason": {
+    "head": {
+      "title": "עמיעד פורת",
+    },
+    "body": {
+      "background": {
+        "type": "html",
+        "url": "https://edenkoveshi.github.io/amiad-porat/",
+        "action": {
+          "trigger": "visit"
+        }
+      }
+    }
+  }
+}
+
+
